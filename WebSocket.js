@@ -220,9 +220,6 @@ Ext.define('Ext.ux.WebSocket', {
      */
     constructor: function (cfg) {
         var me = this;
-        
-        // Prevent messageQueue to be shared among websockets.
-        me.messageQueue = [];
 
         // Raises an error if no url is given
         if (Ext.isEmpty(cfg)) {
